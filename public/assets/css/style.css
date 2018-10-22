@@ -53,15 +53,25 @@ footer, footer li {
   margin: 0 10px;
 }
 
+.articles {
+  text-align: center;
+}
+
 .page-content {
-  width: 63%;
+  width: 75%;
   margin: 0 auto;
 }
 
 .mdl-card {
-  margin: 25px;
+  margin: 20px;
+  width: 25%;
   display: inline-block;
   vertical-align: middle;
+  text-align: left;
+}
+
+.mdl-card__title-text {
+  width: 90%;
 }
 
 .no-news {
