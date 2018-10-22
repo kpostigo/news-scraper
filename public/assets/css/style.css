@@ -9,6 +9,7 @@
   padding-bottom: 4px;
   height: 45px;
   width: 45px;
+  margin: 0 10px;
 }
 
 .mdl-navigation__link {
@@ -33,14 +34,26 @@ footer, footer li {
 }
 .banner-text {
   font-size: 30px;
-  margin-bottom: 35px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.banner-text-small {
+  font-size: 12px;
+  margin-bottom: 20px;
 }
 
-.scrape-btn {
-  font-size: 18px;
+.scrape-btn,
+.clear-btn {
+  font-size: 14px;
+  margin: 0 10px;
 }
 
 .page-content {
   width: 63%;
   margin: 0 auto;
+}
+
+.no-news {
+  text-align: center;
+  color: red;
 }
