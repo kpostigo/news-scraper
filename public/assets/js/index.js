@@ -99,7 +99,7 @@ $(document).ready(function () {
   }
 
   function clearArticles() {
-    $.get('api/delete').then(function () {
+    $.get('/api/delete').then(function () {
       articleContainer.empty();
       initPage();
     });
