@@ -13,11 +13,16 @@
 }
 
 .mdl-navigation__link {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 footer, footer li {
   font-size: 16px;
+}
+
+.mdl-mini-footer .mdl-logo,
+.mdl-mini-footer__link-list li {
+  line-height: 15px;
 }
 
 .mdl-logo a {
@@ -51,6 +56,12 @@ footer, footer li {
 .page-content {
   width: 63%;
   margin: 0 auto;
+}
+
+.mdl-card {
+  margin: 25px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .no-news {
