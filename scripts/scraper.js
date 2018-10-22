@@ -1,7 +1,7 @@
 var axios = require('axios');
 var cheerio = require('cheerio');
 
-module.exports.scrape = () => {
+module.exports.scraper = () => {
   return axios
     .get('https://duckduckgo.com/?q=news&ia=news&iar=news')
     .then(function (res) {

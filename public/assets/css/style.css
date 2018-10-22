@@ -1,0 +1,46 @@
+/* main.handlebars */
+.mdl-layout-title{
+  font-weight: 500;
+  font-size: 40px;
+  align-content: space-between;
+}
+
+.logo {
+  padding-bottom: 4px;
+  height: 45px;
+  width: 45px;
+}
+
+.mdl-navigation__link {
+  font-size: 18px;
+}
+
+footer, footer li {
+  font-size: 16px;
+}
+
+.mdl-logo a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+/* index.handlebars */
+
+.banner {
+  text-align: center;
+  margin: 40px;
+}
+.banner-text {
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+.scrape-btn {
+  font-size: 18px;
+}
+
+.page-content {
+  width: 63%;
+  margin: 0 auto;
+}
