@@ -11,6 +11,7 @@ module.exports = {
         return db.Article.create(articles);
       })
       .then(function (articles) {
+        console.log(articles);
         if (articles.length === 0) {
           res.json({ message: 'No new articles' });
         } else {

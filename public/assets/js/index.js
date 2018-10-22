@@ -38,12 +38,7 @@ $(document).ready(function () {
     var cardBody = $('<div class="mdl-card__supporting-text">').text(article.summary);
 
     var metadata = $('<div class="mdl-card__actions mdl-card--border">')
-      .append(
-        $('<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">')
-          .text(article.source)
-          .append(
-            $('<img width="16" height="16" alt="source-image">').attr('src', article.sourceImg)
-      ));
+      .text(article.author);
     
     var cardMenu = $('<div class="mdl-card__menu">').append(
       $('<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect save-btn">').append(
@@ -94,7 +89,6 @@ $(document).ready(function () {
   function scrapeArticles() {
     $.get('/api/fetch').then(function (data) {
       initPage();
-      bootbox.alert($('<h3>').text(data.message));
     });
   }
 
