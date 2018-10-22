@@ -32,12 +32,13 @@
           </a>
         </div>
         <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect save-btn">
             <i class="material-icons">save</i>
           </button>
         </div>
       </div>
-      {{/each}} {{#unless articles.length}}
+      {{/each}} 
+      {{#unless articles.length}}
       <div class="no-news">
         <h6>It seems like there are no new articles, try clicking the scrape button!</h6>
       </div>

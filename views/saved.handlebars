@@ -1,0 +1,42 @@
+<main class="mdl-layout__content">
+  <div class="page-content">
+    <div class="banner">
+      <p class="banner-text">
+        Saved Articles
+      </p>
+      <p class="banner-text-small">
+        Your Saved Articles
+      </p>
+    </div>
+    <div class="articles">
+      {{#each articles}}
+      <div data-id="{{this._id}}" class="mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+          <h3 class="mdl-card__title-text">
+            <a class="article-link" target="_blank" href="{{this.url}}">{{this.headline}}</a>
+          </h3>
+        </div>
+        <div class="mdl-card__supporting-text">
+          {{this.summary}}
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            <img width="16" height="16" src="{{this.sourceImg}}" alt="source-image">
+            {{this.source}}
+          </a>
+        </div>
+        <div class="mdl-card__menu">
+          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect remove-btn">
+            <i class="material-icons">remove_circle</i>
+          </button>
+        </div>
+      </div>
+      {{/each}} 
+      {{#unless articles.length}}
+      <div class="no-news">
+        <h6>There are no saved articles, go back to the home page and save some!</h6>
+      </div>
+      {{/unless}}
+    </div>
+  </div>
+</main>
